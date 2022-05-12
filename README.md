@@ -45,6 +45,39 @@ module.exports = {
 @tailwind components;
 @tailwind utilities;
 ```
+
+
+## 👌Steps for starting [daisyui](https://daisyui.com/)
+
+
+- must install tailwind first 
+- install ` npm i daisyui`
+- go to tailwind.config.js > replace pplug in 
+```
+ plugins: [require("daisyui")],
+
+ ```
+- create custom theme : >go to tailwind.config.js> paste before plugin
+
+```
+daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: "#a991f7",
+          secondary: "#f6d860",
+          accent: "#37cdbe",
+          neutral: "#3d4451",
+          "base-100": "#ffffff",
+        },
+      },
+      "dark",
+      "cupcake",
+    ],
+  },
+```
+- now change primary, secondary according to your
+
 ### ➡️ install firebase
 ```
 npm install firebase
