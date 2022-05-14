@@ -78,6 +78,32 @@ daisyui: {
 ```
 - now change primary, secondary according to your
 
+
+
+## 👌Steps for React DayPicker [React DayPicker](https://react-day-picker.js.org/)
+
+- install `npm install react-day-picker date-fns`
+- import
+ ```
+     import { DayPicker } from 'react-day-picker';
+     import 'react-day-picker/dist/style.css';
+ ```
+- use in the body ` <DayPicker/>`
+- as we need to change time so we'll declare a state and we set the default value as today's date
+`  const [date, setDate] = useState(new Date());  ` 
+
+
+```
+                   <DayPicker
+                        mode='single'
+                        selected={date}
+                        onSelect={setDate}
+                    />
+            
+```
+
+- for showing the picked day {format (day,'PP')}
+
 ### ➡️ install firebase
 ```
 npm install firebase
