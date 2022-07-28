@@ -289,6 +289,53 @@ const [user, loading] = useAuthState(auth)
 ## 🔃If don't wanna redirect to login page after reload use [user, loading] from useAuthState(auth)
 
 # ➡️ Backend Steps:
+### ➡️ settings.json for express js projects
+```
+{ 
+ // editor
+  "editor.fontSize": 20,
+  "editor.fontFamily": "Fira Code, Operator Mono",
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+ 
+  // cursor
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "expand",
+  //terminal
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontFamily": "Fira Code, Operator Mono",
+  "workbench.colorTheme": "Learn with Sumit - Peace of the eye - Dracula version",
+  "workbench.iconTheme": "vscode-icons",
+ 
+  // config related to code formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "window.zoomLevel": -1,
+  "terminal.integrated.defaultProfile.windows": "Git Bash"
+}
+
+```
 ### ➡️ create project and initialize
 ```
 mkdir project-name
